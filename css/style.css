@@ -151,10 +151,14 @@ h2 {
 .nav__list .nav__items {
   display: flex;
   align-items: center;
+  z-index: 9999;
 }
 .nav__list .nav__items li {
   margin: 0 10px;
   padding: 0 5px;
+}
+.nav__list .nav__items li:hover a {
+  color: var(--main-color);
 }
 .nav__list .nav__items li a {
   text-transform: capitalize;
