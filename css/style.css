@@ -52,7 +52,8 @@ h2 {
   font-size: 2.3rem;
 }
 .container {
-  max-width: 95%;
+  max-width: 1140px;
+  width: 95%;
   margin: 0 auto;
 }
 .sub__title {
@@ -1054,20 +1055,24 @@ h2 {
 }
 
 .newsletter__subscription form input[type="email"] {
-  padding: 20px 160px 20px 20px;
+  padding: 20px 0 20px 20px;
   border: none;
   outline: none;
   border-radius: 50px;
-  max-width: 50%;
+  width: 100%;
+  font-family: "Fira Code";
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
 }
 .newsletter__subscription form input[type="email"]::placeholder {
-  text-transform: capitalize;
+  font-family: "Operator Mono";
 }
 .newsletter__subscription form input[type="submit"] {
+  font-family: "Operator Mono";
+  text-transform: uppercase;
+  letter-spacing: 2px;
   border: none;
   outline: none;
   padding: 10px 15px;
@@ -1076,12 +1081,56 @@ h2 {
   color: var(--text-light);
   position: absolute;
   top: 9px;
-  left: 219px;
+  right: 10px;
   cursor: pointer;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
+}
+@media screen and (max-width: 992px) {
+  .newsletter__content .wrapper {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .newsletter__content .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .newsletter__subscription {
+    padding: 0 80px;
+  }
+  .newsletter__subscription .sub__title {
+    margin: auto;
+  }
+  .newsletter__subscription .main__title {
+    font-size: 30px;
+  }
+  .newsletter__subscription .subscription__text {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .newsletter__subscription {
+    padding: 0 50px;
+    text-align: center;
+  }
+  .newsletter__subscription form input[type="submit"] {
+    letter-spacing: 0px;
+  }
+  .newsletter__illustration img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .newsletter__subscription .main__title {
+    font-size: 20px;
+  }
+  .newsletter__subscription {
+    padding: 0 20px;
+  }
 }
 /* Newsletter css end */
 
@@ -1096,8 +1145,9 @@ h2 {
   margin-bottom: 30px;
 }
 .team__member {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1.5rem;
   position: relative;
 }
 .team__member__img > img {
@@ -1183,6 +1233,48 @@ h2 {
   text-transform: uppercase;
   font-size: 13px;
 }
+@media screen and (max-width: 1120px) {
+  .team__member__details {
+    right: 0;
+    bottom: -10px;
+  }
+  .team__member__details {
+    padding: 20px 15px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .team__member__details {
+    padding: 15px;
+  }
+  .team__member__address > h4 {
+    font-size: 1rem;
+  }
+  .team__content {
+    margin: 30px 0 50px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .team__member {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+  .team__heading .main__title {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .team__member {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+  .team__member__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+  }
+}
 /* Team section css end */
 
 /* Footer css start */
@@ -1199,6 +1291,12 @@ h2 {
 .footer__content p {
   color: var(--text-color);
   font-family: "Fira Code";
+}
+@media screen and (max-width: 575px) {
+  .footer__content p {
+    font-size: 13px;
+    text-align: center;
+  }
 }
 /* Footer css end */
 
@@ -1301,5 +1399,35 @@ h2 {
 }
 .plan__card:hover .card__description {
   color: var(--text-light);
+}
+@media screen and (max-width: 992px) {
+  .chooseplan__content {
+    padding: 30px 0;
+  }
+  .plan__card__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card__head .card__title {
+    font-size: 1.5rem;
+  }
+  .card__head .card__price {
+    font-size: 2rem;
+  }
+  .chooseplan__content .heading .main__title {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .plan__card {
+    width: fit-content;
+    margin: auto;
+  }
+  .plan__card__wrapper {
+    grid-template-columns: 1fr;
+  }
 }
 /* Choose plan css end */
