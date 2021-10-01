@@ -156,6 +156,11 @@ h2 {
 .nav__list .nav__items li {
   margin: 0 10px;
   padding: 0 5px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
 }
 .nav__list .nav__items li:hover a {
   color: var(--main-color);
