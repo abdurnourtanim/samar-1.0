@@ -1,8 +1,12 @@
 // Mobile menu
 const mobileBar = document.querySelector(".mobile__bar");
 const mobileMenu = document.querySelector(".nav__items");
+const barICon = document.querySelector(".bar");
+const closeICon = document.querySelector(".close");
 mobileBar.addEventListener("click", () => {
   mobileMenu.classList.toggle("nav__items__show");
+  barICon.classList.toggle("hide");
+  closeICon.classList.toggle("hide");
 });
 
 // counter

@@ -81,6 +81,9 @@ h2 {
 .wrapper {
   display: flex;
 }
+.hide {
+  display: none !important;
+}
 .green {
   background-color: var(--green);
 }
@@ -255,7 +258,7 @@ h2 {
   }
   .nav__list .nav__items li {
     background: var(--bg-light);
-    margin: 24px 0 !important;
+    margin: 20px 0 !important;
     padding: 20px 0 !important;
     width: 90%;
     text-align: center;
