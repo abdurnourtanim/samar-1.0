@@ -60,4 +60,4 @@ const navbarFixed = () => {
     navbar.classList.remove("navbar__sticky");
   }
 };
-// window.addEventListener("scroll", navbarFixed);
+window.addEventListener("scroll", navbarFixed);
