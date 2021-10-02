@@ -1830,19 +1830,17 @@ hr {
   }
 }
 @media screen and (max-width: 575px) {
-  .contact__form .input__group__wrapper {
-    display: initial;
-  }
   .input__group input,
   .input__group textarea {
     padding: 10px 0 10px 65px;
+    width: 100%;
   }
   .input__group {
     margin: 10px 0;
+    width: 100%;
   }
   .textarea__group {
     padding: 0;
-    width: 70%;
   }
   .contact__heading .main__title {
     font-size: 25px;
