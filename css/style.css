@@ -235,7 +235,7 @@ hr {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 95px;
+    top: 90px;
     left: -100%;
     width: 0%;
     background: var(--main-color);
