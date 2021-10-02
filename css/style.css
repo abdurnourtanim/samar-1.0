@@ -1626,6 +1626,12 @@ hr {
 /* Testimonial css end */
 
 /* Blog section css start */
+.blog__heading .sub__title {
+  margin: 0 auto;
+}
+.blog__heading .main__title {
+  margin: 10px auto;
+}
 .blog__content {
   margin: 50px 0;
 }
@@ -1703,6 +1709,9 @@ hr {
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
   }
+  .blog__heading .main__title {
+    font-size: 30px;
+  }
 }
 @media screen and (max-width: 768px) {
   .blog__details {
@@ -1715,6 +1724,9 @@ hr {
   }
   .blog__wrapper {
     grid-template-columns: 1fr;
+  }
+  .blog__heading .main__title {
+    font-size: 25px;
   }
 }
 @media screen and (max-width: 420px) {
