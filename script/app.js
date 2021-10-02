@@ -50,3 +50,14 @@ const form = document.querySelector("form");
 form.addEventListener("click", (e) => {
   e.preventDefault();
 });
+
+// Page scrolling times navbar fixed on top
+const navbar = document.querySelector(".navbar");
+const navbarFixed = () => {
+  if (window.scrollY > 100) {
+    navbar.classList.add("navbar__sticky");
+  } else {
+    navbar.classList.remove("navbar__sticky");
+  }
+};
+window.addEventListener("scroll", navbarFixed);
