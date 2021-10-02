@@ -1850,3 +1850,38 @@ hr {
 }
 
 /* Contact section css end */
+
+/* Join with us css start */
+.join__with__us {
+  background: url("../image/join-us-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+}
+.join__with__us .wrapper {
+  justify-content: space-between;
+}
+.join__with__us__heading {
+  width: 50%;
+}
+@media screen and (max-width: 992px) {
+  .join__with__us__heading {
+    width: 70%;
+  }
+  .join__with__us__heading .main__title {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .join__with__us .wrapper {
+    flex-direction: column;
+  }
+  .join__with__us__heading {
+    width: 100%;
+  }
+  .join__with__us__heading .main__title {
+    font-size: 25px;
+  }
+}
+/* Join with us css end */
