@@ -1741,3 +1741,112 @@ hr {
   }
 }
 /* Blog section css end */
+
+/* Contact section css start */
+.contact__content {
+  margin: 50px 0;
+}
+.content__wrapper {
+  display: flex;
+  align-items: center;
+}
+.contact__illustration {
+  width: 100%;
+  height: 100%;
+}
+.contact__illustration img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.contact__content__wrapper {
+  display: grid;
+}
+.contact__heading {
+  margin-bottom: 30px;
+}
+.contact__form .input__group__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.input__group {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  position: relative;
+}
+.input__icons {
+  margin-right: 10px;
+  position: absolute;
+  top: 6px;
+  left: 17px;
+}
+.input__icons::after {
+  position: absolute;
+  top: 3px;
+  left: 25px;
+  content: "";
+  width: 2px;
+  height: 20px;
+  background: var(--main-color);
+}
+.input__group input,
+.input__group textarea {
+  box-shadow: 0 0 10px 4px rgb(31 66 135 / 10%);
+  border: none;
+  outline: none;
+  padding: 10px 20px 10px 65px;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+}
+.input__group input::placeholder,
+.textarea__group textarea::placeholder {
+  font-family: "Operator Mono";
+}
+.textarea__group {
+  width: 100%;
+  padding-right: 25px;
+}
+.textarea__group textarea {
+  width: 100%;
+}
+.form__btn {
+  margin-top: 20px;
+}
+.contact__heading .main__title {
+  font-size: 30px;
+}
+@media screen and (max-width: 992px) {
+  .contact__illustration {
+    display: none;
+  }
+  .contact__form .input__group__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 575px) {
+  .contact__form .input__group__wrapper {
+    display: initial;
+  }
+  .input__group input,
+  .input__group textarea {
+    padding: 10px 0 10px 65px;
+  }
+  .input__group {
+    margin: 10px 0;
+  }
+  .textarea__group {
+    padding: 0;
+    width: 70%;
+  }
+  .contact__heading .main__title {
+    font-size: 25px;
+  }
+}
+
+/* Contact section css end */
