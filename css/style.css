@@ -52,6 +52,9 @@ li {
 h2 {
   font-size: 2.3rem;
 }
+hr {
+  border-color: var(--main-color);
+}
 .container {
   max-width: 1140px;
   width: 95%;
@@ -1621,3 +1624,108 @@ h2 {
   }
 }
 /* Testimonial css end */
+
+/* Blog section css start */
+.blog__content {
+  margin: 50px 0;
+}
+.blog__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0 1rem;
+}
+.blog__heading {
+  margin-bottom: 30px;
+}
+.blog__card {
+  box-shadow: 0 0 10px rgb(31 66 135 / 30%);
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+.blog__history {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+}
+.blog__details {
+  padding: 30px;
+  text-align: center;
+}
+.blog__title {
+  margin-bottom: 20px;
+}
+.blog__title > a {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.blog__description {
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+.blog__history i {
+  color: var(--main-color);
+  font-size: 1.3rem;
+}
+.blog__history li {
+  font-weight: 600;
+}
+.blog__history li a,
+.blog__history li {
+  font-weight: 500;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+}
+.blog__history li a i,
+.blog__history li i {
+  margin-right: 5px;
+}
+.blog__img {
+  width: 100%;
+}
+.blog__img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+  -webkit-border-radius: 12px 12px 0 0;
+  -moz-border-radius: 12px 12px 0 0;
+  -ms-border-radius: 12px 12px 0 0;
+  -o-border-radius: 12px 12px 0 0;
+}
+@media screen and (max-width: 992px) {
+  .blog__wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .blog__details {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .blog__details {
+    padding: 30px 50px;
+  }
+  .blog__wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 420px) {
+  .blog__details {
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .blog__history {
+    flex-direction: column;
+    align-items: end;
+  }
+}
+/* Blog section css end */
