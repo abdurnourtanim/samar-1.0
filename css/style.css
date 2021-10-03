@@ -195,6 +195,11 @@ hr {
   color: var(--text-dark);
   font-size: 15px;
   font-weight: 600;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
 }
 .nav__quote {
   display: flex;
@@ -235,7 +240,7 @@ hr {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 90px;
+    top: 62px;
     left: -100%;
     width: 0%;
     background: var(--main-color);
@@ -289,6 +294,10 @@ hr {
 @media screen and (max-width: 575px) {
   .nav__quote .quote {
     display: none;
+  }
+  .navbar,
+  .navbar__sticky {
+    padding: 0;
   }
 }
 /* Navbar css  end */
@@ -1045,6 +1054,7 @@ hr {
   }
   .protfolio__heading .main__title {
     font-size: 25px;
+    text-align: center;
   }
   .protfolio__nav__list {
     grid-template-columns: 1fr auto;
@@ -1791,20 +1801,35 @@ hr {
   background: var(--main-color);
 }
 .input__group input,
-.input__group textarea {
+.input__group textarea,
+.input__group select {
   box-shadow: 0 0 10px 4px rgb(31 66 135 / 10%);
   border: none;
   outline: none;
   padding: 10px 20px 10px 65px;
+  transition: all 0.3s;
   border-radius: 1.5rem;
   -webkit-border-radius: 1.5rem;
   -moz-border-radius: 1.5rem;
   -ms-border-radius: 1.5rem;
   -o-border-radius: 1.5rem;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+.input__group select {
+  color: var(--text-color);
+  font-family: "Operator Mono";
+}
+.input__group select option {
+  font-size: 15px;
+  color: var(--text-color);
 }
 .input__group input::placeholder,
 .textarea__group textarea::placeholder {
   font-family: "Operator Mono";
+  color: var(--text-color);
 }
 .textarea__group {
   width: 100%;
@@ -1818,6 +1843,13 @@ hr {
 }
 .contact__heading .main__title {
   font-size: 30px;
+}
+.input__group input:focus,
+.input__group textarea:focus {
+  border: 1px solid var(--main-color);
+  background-color: var(--sub-title-bg);
+  color: var(--text-color);
+  font-family: "Fira Code";
 }
 @media screen and (max-width: 992px) {
   .contact__illustration {
@@ -1842,8 +1874,13 @@ hr {
   .textarea__group {
     padding: 0;
   }
+  .contact__heading .sub__title {
+    margin: 0 auto;
+  }
   .contact__heading .main__title {
     font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
   }
 }
 
@@ -1878,8 +1915,13 @@ hr {
   .join__with__us__heading {
     width: 100%;
   }
+  .join__with__us__heading .sub__title {
+    margin: 0 auto;
+  }
   .join__with__us__heading .main__title {
     font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
   }
 }
 /* Join with us css end */
